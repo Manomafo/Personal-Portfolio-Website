@@ -1,94 +1,96 @@
 $(function () {
     $(".usa").click(function () {
-        // header
+        // cabeçalho
         $(".navlinks").children().eq(0).text("Home");
         $(".navlinks").children().eq(1).text("About");
         $(".navlinks").children().eq(2).text("Projects");
         $(".navlinks").children().eq(3).text("Contact");
-        $(".lang h5").text("Lang");
-        $(".lang").removeClass("change-br");
-        $(".lang").removeClass("change-fr");
-        $(".n-btn").text("Say Hello");
 
-        // home
-        $(".home-text h4").text("Matthieu");
+        // seção inicial
         $(".home-text h1").text("Full Stack Developer");
-        $(".home-text p").text("I chose this area because I love studying programming and I'm thirsty to learn more and more.");
+        $(".home-text p").text("Escolhi esta área porque amo estudar programação e estou ansioso para aprender cada vez mais.");
+        $(".arrow-box a").attr("href", "#about");
 
-        // about
-        $(".about-text h2").html("About Me <br> Full Stack Dev");
-        $(".about-text p").text("My name is Matthieu Stewart Martinez, I'm 19 years old and I'm French. I'm currently studying at home. My hobby is going to the gym from Monday to Friday. My passion is cars. I completed a FullStack programming course at SENAC RJ in Santa Luzia, and I have experience in projects involving backend and frontend, especially using Spring Boot.");
-        $(".btn").text("See my projects");
+        // seção sobre
+        $(".about-text h2").html("Sobre Mim <br> Dev Full Stack");
+        $(".about-text p").text("Meu nome é Matthieu Stewart Martinez, tenho 19 anos e sou francês. Atualmente, estou estudando em casa. Meu hobby é ir à academia de segunda a sexta-feira. Minha paixão são carros. Completei um curso de programação FullStack no SENAC RJ em Santa Luzia e tenho experiência em projetos que envolvem backend e frontend, especialmente usando Spring Boot.");
+        $(".about-text a").text("Veja meus projetos");
 
-
-        // Timeline
-        $(".timeline-event").eq(0).find(".date").text("June 2024");
-        $(".timeline-event").eq(0).find(".event-title").text("Started FullStack Course");
-        $(".timeline-event").eq(0).find(".event-description").text("Began the FullStack programming course at SENAC RJ, learning both frontend and backend development.");
-
-        $(".timeline-event").eq(1).find(".date").text("August 2024");
-        $(".timeline-event").eq(1).find(".event-title").text("First Web Project");
-        $(".timeline-event").eq(1).find(".event-description").text("Created my first web application using HTML, CSS, JavaScript, and Spring Boot for backend.");
-
-        $(".timeline-event").eq(2).find(".date").text("October 2024");
-        $(".timeline-event").eq(2).find(".event-title").text("Graduated");
-        $(".timeline-event").eq(2).find(".event-description").text("Completed FullStack programming course at SENAC RJ, acquiring solid knowledge in Java, Spring Boot, and JavaScript frameworks.");
-
-
-        // projects
-        $(".head-text h4").text("Projects");
-        $(".exb-text h5").text("InvestPulse: It is a project that displays four indices with charts from the Brazilian stock exchange 'B3' and includes an investment calculator.");
-
-        // contact
-        $(".contact h2").text("Let's Talk");
-        $(".contact p").text("Contact");
+        // seção linha do tempo
+        $(".container .st1").eq(0).find("h2").text("School");
+        $(".content #profile-section").eq(0).find("h1").text("School");
+        $(".content #profile-section").eq(0).find("p").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium temporibus officiis aperiam similique voluptatum, officia quidem fugit. Corrupti, aspernatur architecto. Amet ut veniam accusantium, quisquam sit corrupti maxime voluptatem.");
+        $(".container .st2").eq(0).find("h2").text("Course");
+        $(".content #account-section").eq(0).find("h1").text("JavaScript Programming Course");
+        $(".content #account-section").eq(0).find("p").text("I started the course knowing literally nothing, and in it, I learned the basics of HTML, CSS, and JS.");
+        $(".container .st3").eq(0).find("h2").text("Hastag");
+        $(".content #post-section").eq(0).find("h1").text("Imprecionador Hastag");
+        $(".content #post-section").eq(0).find("p").text("In this course, I learned the basics of HTML, CSS, NodeJs, ExpressJs, and ReactJs with Vite.");
+        $(".container .st4").eq(0).find("h2").text("Senac");
+        $(".content #advanced-section").eq(0).find("h1").text("SENAC FullStack");
+        $(".content #advanced-section").eq(0).find("p").text("Course description: Develop solutions using algorithms, logic, and programming languages. Soft skills for the job market, build web applications, front-end structuring, back-end with Java, hybrid mobile apps, and an integrative project.");
+        $(".container .st5").eq(0).find("h2").text("Current");
+        $(".content #current-section").eq(0).find("h1").text("Current");
+        $(".content #current-section").eq(0).find("p").text("I'm currently studying at home office a personal web curriculum project.");
+        
+        // seção projetos
+        $(".head-left h4").text("Projetos");
+        $(".exb-text h5").text("InvestPulse: É um projeto que exibe quatro índices com gráficos da bolsa de valores brasileira 'B3' e inclui um calculador de investimentos.");
+        
+        // seção contato
+        $(".contact-content h2").text("Vamos Conversar");
+        $(".contact-content p").text("Contato");
+        
+        // rodapé
         $(".s-btnn").eq(0).text("Email");
         $(".s-btnn").eq(1).text("GitHub");
         $(".s-btnn").eq(2).text("Whatsapp");
         $(".s-btnn").eq(3).text("Linkedin");
     });
-
+    
     $(".br").click(function () {
-        // header
+        // cabeçalho
         $(".navlinks").children().eq(0).text("Início");
         $(".navlinks").children().eq(1).text("Sobre");
         $(".navlinks").children().eq(2).text("Projetos");
         $(".navlinks").children().eq(3).text("Contato");
-        $(".lang h5").text("Idioma");
-        $(".lang").removeClass("change-usa");
-        $(".lang").removeClass("change-fr");
-        $(".n-btn").text("Dizer Olá");
-
-        // home
-        $(".home-text h4").text("Matthieu");
+        
+        // seção inicial
         $(".home-text h1").text("Desenvolvedor Full Stack");
-        $(".home-text p").text("Escolhi esta área porque adoro estudar programação e tenho sede de aprender cada vez mais.");
-
-        // about
+        $(".home-text p").text("Escolhi esta área porque amo estudar programação e tenho sede de aprender cada vez mais.");
+        $(".arrow-box a").attr("href", "#about");
+        
+        // seção sobre
         $(".about-text h2").html("Sobre Mim <br> Dev Full Stack");
-        $(".about-text p").text("Meu nome é Matthieu Stewart Martinez, tenho 19 anos e sou francês. Atualmente, estou estudando em casa. Meu hobby é ir à academia de segunda a sexta-feira. Minha paixão são carros. Concluí um curso de programação FullStack no SENAC RJ em Santa Luzia, e tenho experiência em projetos envolvendo backend e frontend, especialmente usando Spring Boot.");
-        $(".btn").text("Ver meus projetos");
+        $(".about-text p").text("Meu nome é Matthieu Stewart Martinez, tenho 19 anos e sou francês. Atualmente, estou estudando em casa. Meu hobby é ir à academia de segunda a sexta-feira. Minha paixão são carros. Completei um curso de programação FullStack no SENAC RJ em Santa Luzia e tenho experiência em projetos que envolvem backend e frontend, especialmente usando Spring Boot.");
+        $(".about-text a").text("Veja meus projetos");
+        
+        // seção linha do tempo
+        $(".container .st1").eq(0).find("h2").text("Escola");
+        $(".content #profile-section").eq(0).find("h1").text("Escola");
+        $(".content #profile-section").eq(0).find("p").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium temporibus officiis aperiam similique voluptatum, officia quidem fugit. Corrupti, aspernatur architecto. Amet ut veniam accusantium, quisquam sit corrupti maxime voluptatem.");
+        $(".container .st2").eq(0).find("h2").text("Curso");
+        $(".content #account-section").eq(0).find("h1").text("Curso de programação JavaScript");
+        $(".content #account-section").eq(0).find("p").text("Comecei o curso sem saber literalmente nada e nele aprendi o básico de HTML, CSS e JS.");
+        $(".container .st3").eq(0).find("h2").text("Hastag");
+        $(".content #post-section").eq(0).find("h1").text("Hastag imprecionador");
+        $(".content #post-section").eq(0).find("p").text("Neste curso, aprendi o básico de HTML, CSS, NodeJs, ExpressJs e ReactJs com Vite.");
+        $(".container .st4").eq(0).find("h2").text("Senac");
+        $(".content #advanced-section").eq(0).find("h1").text("SENAC FullStack");
+        $(".content #advanced-section").eq(0).find("p").text("Descrição do curso: Desenvolva soluções usando algoritmos, lógica e linguagens de programação. Soft skills para o mercado de trabalho, construção de aplicações web, estruturação de front-end, back-end com Java, aplicativos mobile híbridos e projeto integrativo.");
+        $(".container .st5").eq(0).find("h2").text("Atual");
+        $(".content #current-section").eq(0).find("h1").text("Atual");
+        $(".content #current-section").eq(0).find("p").text("Atualmente estou estudando em home office fazendo um projeto de currículo pessoal na web.");
+        
+        // seção projetos
+        $(".head-left h4").text("Projetos");
+        $(".exb-text h5").text("InvestPulse: É um projeto que exibe quatro índices com gráficos da bolsa de valores brasileira 'B3' e inclui um calculador de investimentos.");
 
-        // Timeline
-        $(".timeline-event").eq(0).find(".date").text("Junho 2024");
-        $(".timeline-event").eq(0).find(".event-title").text("Início do Curso FullStack");
-        $(".timeline-event").eq(0).find(".event-description").text("Iniciei o curso de programação FullStack no SENAC RJ, aprendendo desenvolvimento tanto frontend quanto backend.");
+        // seção contato
+        $(".contact-content h2").text("Vamos Conversar");
+        $(".contact-content p").text("Contato");
 
-        $(".timeline-event").eq(1).find(".date").text("Agosto 2024");
-        $(".timeline-event").eq(1).find(".event-title").text("Primeiro Projeto Web");
-        $(".timeline-event").eq(1).find(".event-description").text("Criei minha primeira aplicação web usando HTML, CSS, JavaScript e Spring Boot para o backend.");
-
-        $(".timeline-event").eq(2).find(".date").text("Outubro 2024");
-        $(".timeline-event").eq(2).find(".event-title").text("Formado");
-        $(".timeline-event").eq(2).find(".event-description").text("Concluí o curso de programação FullStack no SENAC RJ, adquirindo sólidos conhecimentos em Java, Spring Boot e frameworks JavaScript.");
-
-        // projects
-        $(".head-text h4").text("Projetos");
-        $(".exb-text h5").text("InvestPulse: É um projeto que exibe quatro índices com gráficos da bolsa de valores brasileira 'B3' e inclui uma calculadora de investimentos.");
-
-        // contact
-        $(".contact h2").text("Vamos Conversar");
-        $(".contact p").text("Contato");
+        // rodapé
         $(".s-btnn").eq(0).text("Email");
         $(".s-btnn").eq(1).text("GitHub");
         $(".s-btnn").eq(2).text("Whatsapp");
@@ -96,47 +98,48 @@ $(function () {
     });
 
     $(".fr").click(function () {
-        // header
+        // cabeçalho
         $(".navlinks").children().eq(0).text("Accueil");
-        $(".navlinks").children().eq(1).text("À propos");
+        $(".navlinks").children().eq(1).text("À Propos");
         $(".navlinks").children().eq(2).text("Projets");
         $(".navlinks").children().eq(3).text("Contact");
-        $(".lang h5").text("Langue");
-        $(".lang").removeClass("change-br");
-        $(".lang").removeClass("change-usa");
-        $(".n-btn").text("Dire Bonjour");
 
-        // home
-        $(".home-text h4").text("Matthieu");
+        // seção inicial
         $(".home-text h1").text("Développeur Full Stack");
-        $(".home-text p").text("J'ai choisi ce domaine parce que j'aime étudier la programmation et j'ai soif d'en apprendre toujours plus.");
+        $(".home-text p").text("J'ai choisi ce domaine parce que j'adore étudier la programmation et j'ai hâte d'apprendre encore plus.");
+        $(".arrow-box a").attr("href", "#about");
 
-        // about
-        $(".about-text h2").html("À propos de moi <br> Développeur Full Stack");
-        $(".about-text p").text("Je m'appelle Matthieu Stewart Martinez, j'ai 19 ans et je suis français. J'étudie actuellement à la maison. Mon passe-temps est d'aller à la salle de sport du lundi au vendredi. Ma passion est les voitures. J'ai suivi un cours de programmation FullStack au SENAC RJ à Santa Luzia, et j'ai de l'expérience dans des projets impliquant backend et frontend, en particulier en utilisant Spring Boot.");
-        $(".btn").text("Voir mes projets");
+        // seção sobre
+        $(".about-text h2").html("À Propos de Moi <br> Dev Full Stack");
+        $(".about-text p").text("Je m'appelle Matthieu Stewart Martinez, j'ai 19 ans et je suis français. Actuellement, j'étudie à domicile. Mon passe-temps est d'aller à la salle de sport du lundi au vendredi. Ma passion est les voitures. J'ai terminé un cours de programmation FullStack au SENAC RJ à Santa Luzia et j'ai de l'expérience dans des projets impliquant le backend et le frontend, en particulier avec Spring Boot.");
+        $(".about-text a").text("Voir mes projets");
 
-        // Timeline
-        $(".timeline-event").eq(0).find(".date").text("Juin 2024");
-        $(".timeline-event").eq(0).find(".event-title").text("Début du Cours FullStack");
-        $(".timeline-event").eq(0).find(".event-description").text("J'ai commencé le cours de programmation FullStack au SENAC RJ, apprenant le développement frontend et backend.");
+        // seção linha do tempo
+        $(".container .st1").eq(0).find("h2").text("École");
+        $(".content #profile-section").eq(0).find("h1").text("École");
+        $(".content #profile-section").eq(0).find("p").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium temporibus officiis aperiam similique voluptatum, officia quidem fugit. Corrupti, aspernatur architecto. Amet ut veniam accusantium, quisquam sit corrupti maxime voluptatem.");
+        $(".container .st2").eq(0).find("h2").text("Cours");
+        $(".content #account-section").eq(0).find("h1").text("Cours de programmation JavaScript");
+        $(".content #account-section").eq(0).find("p").text("J'ai commencé le cours en ne sachant littéralement rien et j'y ai appris les bases du HTML, du CSS et du JS.");
+        $(".container .st3").eq(0).find("h2").text("Hastag");
+        $(".content #post-section").eq(0).find("h1").text("Impréciateur Hastag");
+        $(".content #post-section").eq(0).find("p").text("Dans ce cours, j'ai appris les bases du HTML, CSS, NodeJs, ExpressJs et ReactJs avec Vite.");
+        $(".container .st4").eq(0).find("h2").text("Senac");
+        $(".content #advanced-section").eq(0).find("h1").text("SENAC FullStack");
+        $(".content #advanced-section").eq(0).find("p").text("Description du cours: Développer des solutions à l'aide d'algorithmes, de logique et de langages de programmation. Compétences générales pour le marché du travail, création d'applications Web, structuration front-end, back-end avec Java, applications mobiles hybrides et projet intégrateur.");
+        $(".container .st5").eq(0).find("h2").text("Actuel");
+        $(".content #current-section").eq(0).find("h1").text("Actuel");
+        $(".content #current-section").eq(0).find("p").text("J'étudie actuellement en home office en réalisant un projet de programme personnel sur le Web.");
 
-        $(".timeline-event").eq(1).find(".date").text("Août 2024");
-        $(".timeline-event").eq(1).find(".event-title").text("Premier Projet Web");
-        $(".timeline-event").eq(1).find(".event-description").text("J'ai créé ma première application web en utilisant HTML, CSS, JavaScript et Spring Boot pour le backend.");
+        // seção projetos
+        $(".head-left h4").text("Projets");
+        $(".exb-text h5").text("InvestPulse : C'est un projet qui affiche quatre indices avec des graphiques de la bourse brésilienne 'B3' et comprend un calculateur d'investissements.");
 
-        $(".timeline-event").eq(2).find(".date").text("Octobre 2024");
-        $(".timeline-event").eq(2).find(".event-title").text("Diplômé");
-        $(".timeline-event").eq(2).find(".event-description").text("J'ai terminé le cours de programmation FullStack au SENAC RJ, acquérant de solides connaissances en Java, Spring Boot et frameworks JavaScript.");
+        // seção contato
+        $(".contact-content h2").text("Discutons");
+        $(".contact-content p").text("Contact");
 
-
-        // projects
-        $(".head-text h4").text("Projets");
-        $(".exb-text h5").text("InvestPulse : C'est un projet qui affiche quatre indices avec des graphiques de la bourse brésilienne 'B3' et comprend une calculatrice d'investissement.");
-
-        // contact
-        $(".contact h2").text("Discutons");
-        $(".contact p").text("Contact");
+        // rodapé
         $(".s-btnn").eq(0).text("Email");
         $(".s-btnn").eq(1).text("GitHub");
         $(".s-btnn").eq(2).text("Whatsapp");

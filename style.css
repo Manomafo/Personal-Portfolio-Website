@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.head {
+    background-color: #333;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.nav li.active {
+    background-color: #555;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.section.show {
+    display: block;
+}
+
+#profile:checked ~ .content #profile-section,
+#settings:checked ~ .content #account-section,
+#posts:checked ~ .content #post-section,
+#books:checked ~ .content #advanced-section {
+    display: block;
+    transform: scale(1);
+    transform-origin: bottom;
+}
+
+#profile-section,
+#account-section,
+#post-section,
+#advanced-section {
+    transform: scale(0);
+    transform-origin: center bottom;
+    transition: all .7s ease;
+    position: absolute;
+    top: 0;
+}

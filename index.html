@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/global.css">
 
     <!-- box icons link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@lacurrent/css/boxicons.min.css">
 
     <!-- remix icons link -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
@@ -36,6 +36,7 @@
         <ul class="navlinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#timeline">Timeline</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </ul>
@@ -73,7 +74,7 @@
 
         <div class="home-img" data-aos="zoom-in" data-aos-duration="1400">
             <!-- <img src="./img/mat-hero.png"> -->
-            <img src="./img/Sem título.jpeg">
+            <img src="./img/hero.png">
         </div>
 
         <div class="social">
@@ -107,81 +108,80 @@
     </section>
 
     <!-- timeline -->
-    <section>
+
+    <section id="timeline">
         <h3 class="hints">Timeline</h3>
-        <div class="timeline-wrapper">
-            <ul class="timeline">
-                <li data-date="Jan 2021 - Dez 2023">
-                    <span class="title">Ensino Medio</span>
-                    <div class="data">
-                        <h3>Escola Estadual Professor Viera Fazenda</h3>
-                        <small>Jan 2021 - Dez 2023</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam harum laborum mollitia
-                            quibusdam adipisci impedit minima corporis magnam voluptatibus culpa nam expedita quis,
-                            repellat fuga! In esse at ab dolorem.</p>
-                        <span class="close">Click To Close</span>
-                    </div>
-                </li>
-
-                <li data-date="Jan 2024 - Mar">
-                    <span class="title">Curso de programação</span>
-                    <div class="data">
-                        <h3>Curso em vídeo JavaScript: TI</h3>
-                        <small>Jan 2024 - Mar 2024</small>
-                        <p>Comensei o curso sabendo literalmente nada, e nele eu aprendi o o basico de HTML, CSS e JS.
-                        </p>
-                        <span class="close">Click To Close</span>
-                    </div>
-                </li>
-
-                <li data-date="Mar 2024 - Mar">
-                    <span class="title">Hastag Lógica de programação</span>
-                    <div class="data">
-                        <h3>Algoritimos o Lógica de programação</h3>
-                        <small>Mar 2024 - Mar 2024</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam harum laborum mollitia
-                            quibusdam adipisci impedit minima corporis magnam voluptatibus culpa nam expedita quis,
-                            repellat fuga! In esse at ab dolorem.</p>
-                        <span class="close">Click To Close</span>
-                    </div>
-                </li>
-
-                <li data-date="Mar 2024 - Out">
-                    <span class="title">Hastag JS Imprecionador</span>
-                    <div class="data">
-                        <h3>Hastag JS Imprecionador</h3>
-                        <small>Mar 2024 - Out 2024</small>
-                        <p>Nesse curso aprendi a mexer com o Basico do HTML, CSS, NodeJs e ExpressJs, ReactJs com Vite.
-                        </p>
-                        <span class="close">Click To Close</span>
-                    </div>
-                </li>
-                <li data-date="Jul 2024 - Jul">
-                    <span class="title">Ltools Ltda Web3</span>
-                    <div class="data">
-                        <h3>Ltools Ltda Web3 Week 4ª Ed.:TI</h3>
-                        <small>Jul 2024 - Jul 2024</small>
-                        <p>Nesse intensivão aprendi a Cração e Deploy de um contrato em SOLIDITY para a BlockChain,
-                            Criação de um Site em NodeJs, Conexão do Site com a BlockChain.</p>
-                        <span class="close">Click To Close</span>
-                    </div>
-                </li>
-
-                <li data-date="Mai 2024 - Out">
-                    <span class="title">SENAC</span>
-                    <div class="data">
-                        <h3>PROGRAMAÇÃO JavaScript FULL STACK: TECNOLOGIA INFORMAÇÃO TI</h3>
-                        <small>Mai 2024 - Out 2024</small>
-                        <p>Deccrição do curso: Desenvolver soluções utilizando algoritimos, lógica e linguagem de
-                            programação, Soft Skils para o mercado de trabalho, Elaborar projetos de aplicações Web,
-                            Estruturar aplicações Front-End para Web, Desenvolver aplicações Back-End para Web
-                            utilizando a linguagem Java, Desenvolver aplicações híbridas para Mobile e o Projeto
-                            Integrador.</p>
-                        <span class="close">Click To Close</span>
-                    </div>
-                </li>
-
-            </ul>
+        <div class="container">
+            <input type="radio" name="bright" id="profile">
+            <input type="radio" name="bright" id="settings">
+            <input type="radio" name="bright" id="posts">
+            <input type="radio" name="bright" id="books">
+            <input type="radio" name="bright" id="current">
+            <div class="head">
+                <ul class="nav">
+                    <li class="st st1">
+                        <h2 class="inner">School</h2>
+                    </li>
+                    <li class="st st2">
+                        <h2 class="inner">Course</h2>
+                    </li>
+                    <li class="st st3">
+                        <h2 class="inner">Hastag</h2>
+                    </li>
+                    <li class="st st4">
+                        <h2 class="inner">SENAC</h2>
+                    </li>
+                    </li>
+                    <li class="st st5">
+                        <h2 class="inner">Current</h2>
+                    </li>
+                </ul>
+                <div class="line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="content">
+                <section id="profile-section" class="section">
+                    <span><i class="ri-school-line"></i></span>
+                    <h1 class="timeline-subtitile">School</h1>
+                    <small>Jan 2021 - Dez 2023</small>
+                    <img class="rotate" src="/img/rotate-phone.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium temporibus
+                        officiis aperiam similique voluptatum, officia quidem fugit. Corrupti, aspernatur architecto.
+                        Amet ut veniam accusantium, quisquam sit corrupti maxime voluptatem.</p>
+                </section>
+                <section id="account-section" class="section">
+                    <span><i class="ri-user-fill"></i></span>
+                    <h1 class="timeline-subtitile">JavaScript Programming Course</h1>
+                    <small>Jan 2024 - Mar 2024</small>
+                    <img class="rotate" src="/img/rotate-phone.png" alt="">
+                    <p>I started the course knowing literally nothing, and in it, I learned the basics of HTML, CSS,
+                        and JS.</p>
+                </section>
+                <section id="post-section" class="section">
+                    <span><i class="ri-edit-box-line"></i></i></span>
+                    <h1 class="timeline-subtitile">Hastag imprecionador</h1>
+                    <small>Mar 2024 - Out 2024</small>
+                    <img class="rotate" src="/img/rotate-phone.png" alt="">
+                    <p>In this course, I learned the basics of HTML, CSS, NodeJs, ExpressJs, and ReactJs with Vite.</p>
+                </section>
+                <section id="advanced-section" class="section">
+                    <span><i class="ri-profile-line"></i></span>
+                    <h1 class="timeline-subtitile">SENAC FullStack</h1>
+                    <small>Mai 2024 - Out 2024</small>
+                    <img class="rotate" src="/img/rotate-phone.png" alt="">
+                    <p>Course description: Develop solutions using algorithms, logic, and programming languages.
+                        Soft skills for the job market, build web applications, front-end structuring, back-end with
+                        Java, hybrid mobile apps, and an integrative project.</p>
+                </section>
+                <section id="current-section" class="section">
+                    <span><i class="ri-home-line"></i></span>
+                    <h1 class="timeline-subtitile">current</h1>
+                    <small>set 2024 - out 2024</small>
+                    <img class="rotate" src="/img/rotate-phone.png" alt="">
+                    <p>I'm currently studying at home doing a personal web curriculum project.</p>
+                </section>
+            </div>
         </div>
     </section>
 
